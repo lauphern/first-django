@@ -1,0 +1,5 @@
+{
+  "python.pythonPath": "/Users/lau/.venv/firstdjango-env/bin/python",
+  "vsintellicode.python.completionsEnabled": false,
+  "python.globalModuleInstallation": true
+}
