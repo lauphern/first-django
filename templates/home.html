@@ -3,7 +3,8 @@
 {% block content %}
 <h1>Hello {{name}}!</h1>
 
-<form action="add">
+<form action="add" method="post">
+  {% csrf_token %}
   <label for="num1">Enter first number:</label>
   <input type="number" name="num1" id=""><br>
   <label for="num1">Enter second number:</label>
