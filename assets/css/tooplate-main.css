@@ -172,6 +172,12 @@ a {
 .featured-item:hover {
 	opacity: 0.9;
 }
+.featured-item span.sale {
+	background-color: white;
+	position: absolute;
+	margin-top: 0.5rem;
+	padding: 0.25rem 0.5rem;
+}
 .featured-item img {
 	width: 100%;
 }

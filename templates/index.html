@@ -104,6 +104,9 @@ https://www.tooplate.com/view/2114-pixie
               {% for item in items %}
                 <a href="single-product.html">
                   <div class="featured-item">
+                    {% if item.sale %}
+                      <span class="sale"><i class="fa fa-tags"></i>&nbsp;For Sale</span>
+                    {% endif %}
                     <img src="{{baseUrl}}/{{item.image}}">
                     <h4>{{item.name}}</h4>
                     <h6>${{item.price}}</h6>
