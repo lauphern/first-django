@@ -1,9 +1,11 @@
 from django.db import models
 
 # Create your models here.
-class Item:
-  id: int
-  name: str
-  image: str
-  price: int
-  sale: bool
+
+# https://docs.djangoproject.com/en/3.1/ref/models/fields/
+
+class Item(models.Model):
+  name = models.CharField(max_length=100)
+  img = models.ImageField(upload_to='pics')
+  price = models.IntegerField()
+  sale = models.BooleanField(default=False)
